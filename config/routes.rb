@@ -21,6 +21,7 @@ SampleApp::Application.routes.draw do
 
   # Sample resource route with options:
   #   resources :products do
+  :if winheight(2) < 0 |   confirm enew | else |   confirm close | endif
   #     member do
   #       get 'short'
   #       post 'toggle'
