@@ -1,9 +1,8 @@
 SampleApp::Application.routes.draw do
-  get "pages/home"
-
-  get "pages/contact"
-
-  get "pages/about"
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
+  match '/help',    :to => 'pages#help'
+  root :to => 'pages#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -21,7 +20,7 @@ SampleApp::Application.routes.draw do
 
   # Sample resource route with options:
   #   resources :products do
-  :if winheight(2) < 0 |   confirm enew | else |   confirm close | endif
+  #:if winheight(2) < 0 |   confirm enew | else |   confirm close | endif
   #     member do
   #       get 'short'
   #       post 'toggle'
